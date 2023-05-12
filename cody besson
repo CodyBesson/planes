@@ -10,9 +10,7 @@ console = Console()
 
 repeat = True
 class airline:            
-
-    while repeat:
-                # TODO: print a nice tiele for our program
+# TODO: print a nice tiele for our program
         console.print(
             Panel.fit(
                 " welcome to the airport ",
@@ -20,66 +18,84 @@ class airline:
                 subtitle="By Cody Besson ")
         )
         print()
-    
+
         class airline:
             pilot = (input("enter pilot's name: "))
             model = (input("enter model: "))
             seating_capacity = (input("enter seating capacity: "))
             max_speed = (input("enter max speed: "))
             print(f"{pilot} {model} with seating capacity: {seating_capacity} has a max speed of {max_speed}")
-        
-        
-        
-        # TODO: take the input from user choice for thier choice
-            user_choice=int(input("1(t)ake off 2(a)ccellerate 3(d)ecelerate 4(l)and 5e(x)it : "))
-        
-        # TODO: 1(t)ake off 2(a)ccellerate 3(d)ecelerate 4(l)and 5e(x)it
-            if user_choice == 1:
-                "747 is taking off"
-                "plane is taking off"
-            elif user_choice == 2:
-                choice_name= "your plane is traveling 150 mph"
-            elif user_choice == 3:
-                choice_name= "you plane is traveling 100 mph"
-            elif user_choice == 4:
-                choice_name= f"{model} is safely landing with {seating_capacity} passengers."
-            else:
-                choice_name= "thanks for flying Guillermo's Great Big Airline"
+            console.print(
+                Panel.fit(
+                " let's Fly or Not ",
+                style="magenta",
+                subtitle=" ... ")
+                )
+            
+            
+            # Declare running total variable loop count
+            total = 0
+            count = 0
+            while count < 6:
+      
+                    
+            # TODO: take the input from user choice for thier choice
 
-        # take off
-            if (user_choice==2 ):
-                print(f"{model} is taking off")
-    
-        # TODO: speed  
-            if (user_choice==1):
-                print("your palne is traveling 150 mph")
+                user_choice=int(input("1(t)ake off 2(a)ccellerate 3(d)ecelerate 4(l)and 5e(x)it : "))
+            
+            # TODO: 1(t)ake off 2(a)ccellerate 3(d)ecelerate 4(l)and 5e(x)it
+                if user_choice == 1:
+                    f"{model} is taking off your plane is traveling 100 mph"
+                elif user_choice == 2:
+                    choice_name= "your plane is traveling 150 mph"
+                elif user_choice == 3:
+                    choice_name= "you plane is traveling 100 mph"
+                elif user_choice == 4:
+                    choice_name= f"{model} is safely landing with {seating_capacity} passengers."
+                else:
+                    choice_name= "thanks for flying Guillermo's Great Big Airline"
+
+            # take off
+                if (user_choice==2 ):
+                    print(f"your plane is traveling 150 mph")
+        
+            # TODO: speed  
+                if (user_choice==1):
+                    print(f"{model} is taking off your plane is traveling 100 mph")
+                    
+            # TODO: speed    
+                if (user_choice==3):
+                    print("you plane is traveling 100 mph")
+
+            # TODO: landign with people     
+                if (user_choice==4):
+                    print(f"{model} is safely landing with {seating_capacity} passengers.")
+                    
+                            
+            # TODO: exit  
+                if (user_choice==5):
+                    console.print(
+                    Panel.fit(
+                    " This is going good ",
+                    style="green",
+                    subtitle=" ... ")
+                    )
+                    print("thanks for flying Guillermo's Great Big Airline")
+                    
+            # TODO: exit  
+                if (user_choice==6):
+                    console.print(
+                        Panel.fit(
+                        " We Crached Failed ",
+                        style="red",)
+                        )
+                    print("Not that button your going to be ejected!")  
+                break
                 
-        # TODO: speed    
-            if (user_choice==3):
-                print("you plane is traveling 100 mph")
-
-        # TODO: landign with people     
-            if (user_choice==4):
-                print(f"{model} is safely landing with {seating_capacity} passengers.")
-                
-        # TODO: exit  
-            if (user_choice==5):
-                print("thanks for flying Guillermo's Great Big Airline")
-
-        # TODO: display results 
-            print("do you want to fly again? yes or no?:")
-            repeat = ("y" or "yes") in input().lower()
-
-            def display_results(self, movement):
-                print(f"{movement}")
-
+            
             
         
 #         # TODO: display results
 # console.print(f"Area: [bold blue] {area} [/bold blue]")
 # console.print(f"Perimeter: [bold blue] {perimeter} [/bold blue]")
         
-        
-        
-#class alien:
-#("(t)ake off (a)ccellerate (d)ecelerate (l)and e(x)it : ")
