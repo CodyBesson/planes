@@ -10,7 +10,7 @@ console = Console()
 
 repeat = True
 class airline:            
-# TODO: print a nice tiele for our program
+# TODO: print a nice title for our program
         console.print(
             Panel.fit(
                 " welcome to the airport ",
@@ -80,7 +80,7 @@ class airline:
                     style="green",
                     subtitle=" ... ")
                     )
-                    print("thanks for flying Guillermo's Great Big Airline")
+                    print("thanks for flying Guillermo's Great Big Airline now try to land")
                     
             # TODO: exit  
                 if (user_choice==6):
@@ -90,7 +90,7 @@ class airline:
                         style="red",)
                         )
                     print("Not that button your going to be ejected!")  
-                break
+                    break
                 
             
             
